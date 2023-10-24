@@ -1,0 +1,46 @@
+4
+22
+Max Verstappen
+2 6 2 7;
+Sergio Perez
+4 4 4 0;
+Lewis Hamilton
+8 0 5 1;
+Fernando Alonso
+0 9 3 8;
+Carlos Sainz
+9 3 0 4;
+Lando Norris
+6 7 6 0;
+Charles Leclerc
+5 8 7 9;
+George Russell
+1 1 0 5;
+Oscar Piastri
+10 5 1 6;
+Pierre Gasly
+3 0 0 3;
+Lance Stroll
+2 0 3 2;
+Esteban Ocon
+4 1 1 3;
+Alexander Albon
+2 0 1 4;
+Valtteri Bottas
+9 2 3 1;
+Nico Hulkenberg
+0 2 2 1;
+Yuki Tsunoda
+3 5 1 1;
+Zhou Guanyu
+2 0 2 2;
+Kevin Magnussen
+1 1 0 2;
+Liam Lawson
+2 1 2 0;
+Logan Sargeant
+1 1 2 1;
+Nyck de Vries
+1 0 1 0;
+Daniel Ricciardo
+1 1 0 1;
