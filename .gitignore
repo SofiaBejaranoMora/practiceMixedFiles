@@ -1,0 +1,47 @@
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+*/**/*.vsidx
+*/**/*.opendb
+*/**/*.db
+*/**/*.wsuo
+*/**/*.db-shm
+*/**/*.db-wal
+*/**/*.lock
+*/**/*.sqlite
+
+*.vsidx
+*.lock
+*.vsidx
+ejemplo 2 - archvios mixtos/ConsoleApplication1/.vs/ConsoleApplication1/v17/.suo
+*.lock
+*.vsidx

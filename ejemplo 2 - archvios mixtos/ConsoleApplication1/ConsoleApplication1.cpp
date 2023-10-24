@@ -1,12 +1,12 @@
-#include <fstream>  // Para ifstream
-#include <iostream> // Para cout
+#include <fstream>  
+#include <iostream>
 #include <vector>
 #include <string>
 
 using namespace std;
 
 
-int calcula_puntuacion(const vector<int>& puestos)
+int calculatePunctuation(const vector<int>& puestos)
 {
 	const vector<int> puntos{ 10,8,6,5,4,3,2,1 };
 
@@ -17,7 +17,7 @@ int calcula_puntuacion(const vector<int>& puestos)
 	return suma;
 }
 
-void puntuacion(vector<string>& pilotos, vector<int>& puntos, string nombre_fichero)
+void puntuation(vector<string>& pilotos, vector<int>& puntos, string nombre_fichero)
 {
 	ifstream fich(nombre_fichero);
 	if (!fich.is_open())
@@ -59,7 +59,7 @@ void puntuacion(vector<string>& pilotos, vector<int>& puntos, string nombre_fich
 				}
 			}
 		}
-		puntos.push_back(calcula_puntuacion(puestos));
+		puntos.push_back(calculatePunctuation(puestos));
 	}
 }
 
@@ -75,6 +75,6 @@ int main()
 {
 	vector<string> pilotos;
 	vector<int> puntos;
-	puntuacion(pilotos, puntos, "pilotos_clasificaciones.txt");
+	puntuation(pilotos, puntos, "pilotos_clasificaciones.txt");
 	muestra_puntuacion(pilotos, puntos);
 }
