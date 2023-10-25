@@ -5,7 +5,6 @@
 
 using namespace std;
 
-
 int calculatePunctuation(const vector<int>& puestos)
 {
 	const vector<int> puntos{ 10,8,6,5,4,3,2,1 };
@@ -65,7 +64,7 @@ void puntuation(vector<string>& pilotos, vector<int>& puntos, string nombre_fich
 	fich.close();
 }
 
-void muestra_puntuacion(const vector<string>& pilotos, const vector<int>& puntos)
+void showPunctuation(const vector<string>& pilotos, const vector<int>& puntos)
 {
 	cout << "\nLa puntuacion actual es:\n\n";
 	for (int i = 0; i < pilotos.size(); i++)
@@ -78,5 +77,5 @@ int main()
 	vector<string> pilotos;
 	vector<int> puntos;
 	puntuation(pilotos, puntos, "pilotos_clasificaciones.txt");
-	muestra_puntuacion(pilotos, puntos);
+	showPunctuation(pilotos, puntos);
 }
