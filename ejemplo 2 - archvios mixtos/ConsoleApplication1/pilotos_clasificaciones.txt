@@ -7,7 +7,7 @@ Sergio Perez
 Lewis Hamilton
 8 0 5 1;
 Fernando Alonso
-0 9 3 8;
+0 8 3 8;
 Carlos Sainz
 8 3 0 4;
 Lando Norris
