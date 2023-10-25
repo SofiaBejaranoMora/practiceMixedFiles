@@ -11,9 +11,10 @@ int calculatePunctuation(const vector<int>& puestos)
 	const vector<int> puntos{ 10,8,6,5,4,3,2,1 };
 
 	int suma = 0;
-	for (auto puesto : puestos)
+	for (auto puesto : puestos) {
 		if (puesto > 0 && puesto < puntos.size() + 1)
 			suma += puntos[puesto - 1];
+	}
 	return suma;
 }
 
@@ -28,7 +29,7 @@ void puntuation(vector<string>& pilotos, vector<int>& puntos, string nombre_fich
 
 	string n_carreras;
 	getline(fich, n_carreras);//se lee la línea y se convierte su valor de texto a entero con atoi (ANSI to integer)
-	int num_carreras = atoi(n_carreras.c_str());
+	int num_carreras = atoi(n_carreras.c_str()); //funciona con stoi
 	string n_pilotos;
 	getline(fich, n_pilotos);
 	int num_pilotos = atoi(n_pilotos.c_str());
@@ -36,7 +37,7 @@ void puntuation(vector<string>& pilotos, vector<int>& puntos, string nombre_fich
 	pilotos.clear();  // Por si vienen con datos a la función
 	puntos.clear();
 
-	for (int i = 0; i < num_pilotos; ++i)
+	for (int i = 0; i < num_pilotos; i++)
 	{
 		string piloto;
 		getline(fich, piloto);
@@ -46,10 +47,10 @@ void puntuation(vector<string>& pilotos, vector<int>& puntos, string nombre_fich
 		int puesto;
 		string s_puestos;
 		getline(fich, s_puestos);
-		for (int j = 0; j < num_carreras; ++j)
+		for (int j = 0; j < num_carreras; j++)
 		{
 			int pos = 0;
-			while  (pos = s_puestos.find(" ")!= string::npos) {
+			while  (pos = s_puestos.find(";") != string::npos) {
 				if (pos == string::npos)
 					pos = s_puestos.find(";");
 				if (pos != string::npos) {
@@ -61,12 +62,13 @@ void puntuation(vector<string>& pilotos, vector<int>& puntos, string nombre_fich
 		}
 		puntos.push_back(calculatePunctuation(puestos));
 	}
+	fich.close();
 }
 
 void muestra_puntuacion(const vector<string>& pilotos, const vector<int>& puntos)
 {
 	cout << "\nLa puntuacion actual es:\n\n";
-	for (int i = 0; i < pilotos.size(); ++i)
+	for (int i = 0; i < pilotos.size(); i++)
 		cout << pilotos[i] << ":" << puntos[i] << endl;
 	cout << endl << endl;
 }
